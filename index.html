@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edwin Hubble - Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif&&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="display">
+        <img src="img/bg.png" alt="">
+        <img src="img/galaxy.png" alt="" data-for="galaxy">
+        <img src="img/outside.png" alt="" data-for="other_galaxies" hidden>
+        <img src="img/redshift.png" alt="" data-for="redshift" hidden>
+    </div>
+    <div class="info">
+        <div class="details">
+            <div data-for="galaxy">
+                <div class="header"><i class="material-icons md-24">surround_sound</i> Galaxy classification</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            After discovering that other galaxies exist, he also created a way to
+                            classify galaxies, called the <strong>Galaxy morphological classification</strong>.
+                        </li>
+                        <li>
+                            This system was of course later expanded upon, but layed the foundations for the
+                            modern galaxy classification and has helped modern physicists understand the
+                            Universe.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-for="other_galaxies" hidden>
+                <div class="header"><i class="material-icons md-24">all_out</i> Other Galaxies</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Edwin Hubble's work proved to astronomers that there are
+                            other galaxies outside of the milky way. At the time of the
+                            completion of the <strong>Hooker Telescope</strong>, the widely-accepted view
+                            of the Universe was that it consisted only of the Milky Way
+                            Galaxy.
+                        </li>
+                        <li>
+                            Using this telescope, he used the methods he knew to find
+                            and use <strong>Cepheid variables</strong> &mdash; stars that pulsate at
+                            a frequent interval and can be used to determine the distance
+                            of surrounding objects. Using these stars, he proved that some
+                            nebulae observed by astronomers were simply too far away to be
+                            part of our own galaxy.
+                        </li>
+                        <li>
+                            His discovery is seen as one of the most important discoveries in Astrophysics,
+                            and has lead to a much clearer understanding of the universe and changed the way
+                            people at the time and people now see the Universe.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-for="redshift" hidden>
+                <div class="header"><i class="material-icons md-24">waves</i> Redshift</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Edwin Hubble devised what is now known as the <strong>Hubble-Lemaître law</strong> &mdash;
+                            a law that states that galaxies are moving away from Earth (or any point in space) at
+                            velocities relative to their distances (farther away = faster recession velocity).
+                        </li>
+                        <li>
+                            The equation <code>v = H<sub>0</sub>&middot;D</code> uses something called the
+                            <strong>Hubble constant</strong>, a value that changes over time and gives the
+                            velocity of recession of a galaxy at any distance.
+                        </li>
+                        <li>
+                            The Hubble constant is currently valued as <code>70(kms<sup>-1</sup>)Mpc<sup>-1</sup></code>
+                            however the SI unit for the value of <code>H<sub>0</sub></code> is <code>s<sup>-1</sup></code>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-for="profile" hidden>
+                <div class="header"><i class="material-icons md-24">account_circle</i> Edward Hubble</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Edwin Hubble was a physicist born in November, 1889, and pioneered the field of
+                            Astrophysics and equally pioneered for it to be recognised as a field of physics
+                            by the Nobel prize committee.
+                        </li>
+                        <li>
+                            He was born in Marshfield, Missouri and studied at the University of Chicago and
+                            The Queen's College, although he initially studied law as his father wanted him
+                            to work in the same career as him.
+                        </li>
+                        <li>
+                            <em>Did you know?</em> Edwin Hubble actually taught Spanish alongside Physics at
+                            a high school in 1913.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+           <div class="button active" data-section="galaxy">
+                <i class="material-icons md-36">surround_sound</i>
+            </div>
+            <div class="button" data-section="other_galaxies">
+                <i class="material-icons md-36">all_out</i>
+            </div>
+            <div class="button" data-section="redshift">
+                <i class="material-icons md-36">waves</i>
+            </div>
+            <div class="button" data-section="profile">
+                <i class="material-icons md-36">account_circle</i>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="change.js"></script>
+</body>
+</html>

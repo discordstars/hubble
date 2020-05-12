@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+/*    height: 70vh;*/
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px solid white;
+    margin: 2.5vh;
+    min-height: 25vh;
+    width: calc(100vw - 5vh);
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.display > img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    image-rendering: pixelated;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.display > img.overlay {
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.header {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    padding-bottom: 4px;
+}
+
+.details {
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button:hover, .button.active {
+    background: white;
+    color: black;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/*
+.header > .material-icons {
+    vertical-align: middle !important;
+}*/
+
+code {
+    font-family: 'Noto Serif', serif;
+}
